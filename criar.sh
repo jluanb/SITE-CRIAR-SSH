@@ -17,7 +17,7 @@ exit 0
 fi
 
 # Aqui voce coloca o seu IP:
-ip=Coloque_Aqui
+ip=$(wget -qO- ipv4.icanhazip.com)
 validade=$(date '+%C%y/%m/%d' -d " +2 days")
 validadebr=$(date '+%d/%m/%C%y' -d " +2 days")
 
